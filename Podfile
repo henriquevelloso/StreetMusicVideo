@@ -1,6 +1,7 @@
-use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.2'
+use_frameworks!
+
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.8'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
