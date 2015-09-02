@@ -45,17 +45,49 @@ class User: PFUser {
     //MARK: - Functions
     
     func signIn(username: String?, password: String?, callback: (success: Bool, error: NSError?) -> ()) {
+        
+        
+        
+        
+        
         User.logInWithUsernameInBackground(username!, password: password!, block: { (user, error) -> Void in
             if(error == nil) {
                 callback(success: true, error: nil)
             } else {
                 callback(success: false, error: error)
                 
-                
-                
             }
         })
+        
+        
+        
+        
+        
+        User.logInWithUsernameInBackground("ds", password: "ds") { user, error in
+            
+            if(error == nil) {
+                callback(success: true, error: nil)
+            } else {
+                callback(success: false, error: error)
+                
+            }
+            
+        }
+        
+        self.signIn("", password: "") { success, error in
+            
+            
+        }
+        
+        
     }
+    
+    
+    
+    
+    
+    
+    
     
     func resetPassword(email: String?, callback: (success: Bool, error: NSError?) -> ()) {
         User.requestPasswordResetForEmailInBackground(email!, block: { (success, error) -> Void in

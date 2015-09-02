@@ -20,6 +20,7 @@
 		C5FDB2231B968397001F2B94 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDB2221B968397001F2B94 /* Like.swift */; settings = {ASSET_TAGS = (); }; };
 		C5FDB2251B9683A4001F2B94 /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDB2241B9683A4001F2B94 /* Mention.swift */; settings = {ASSET_TAGS = (); }; };
 		C5FDB2271B9683B2001F2B94 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDB2261B9683B2001F2B94 /* Report.swift */; settings = {ASSET_TAGS = (); }; };
+		C5FDB2621B9723DD001F2B94 /* PFRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDB2611B9723DD001F2B94 /* PFRelation.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C5FDB2221B968397001F2B94 /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		C5FDB2241B9683A4001F2B94 /* Mention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		C5FDB2261B9683B2001F2B94 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C5FDB2611B9723DD001F2B94 /* PFRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFRelation.swift; sourceTree = "<group>"; };
 		E0CD5655AA4CC82A6B0A30FF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EEEB71BDD58FBE90148B00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,12 +128,21 @@
 			children = (
 				C5CE569C1B96109800390835 /* AppDelegate.swift */,
 				C5CE56A31B96109800390835 /* Assets.xcassets */,
+				C5FDB2281B971DCC001F2B94 /* Extensions */,
 				C52D3F991B96625200535111 /* Model */,
 				C52D3F9C1B96625F00535111 /* View */,
 				C52D3F961B96624100535111 /* Controller */,
 				C52D3F9D1B96627F00535111 /* Resources */,
 			);
 			path = StreetMusicVideo;
+			sourceTree = "<group>";
+		};
+		C5FDB2281B971DCC001F2B94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5FDB2611B9723DD001F2B94 /* PFRelation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D28452B363775D6C6F3763FC /* Pods */ = {
@@ -270,6 +281,7 @@
 				C5FDB2251B9683A4001F2B94 /* Mention.swift in Sources */,
 				C5FDB2211B96838C001F2B94 /* Comment.swift in Sources */,
 				C5CE569D1B96109800390835 /* AppDelegate.swift in Sources */,
+				C5FDB2621B9723DD001F2B94 /* PFRelation.swift in Sources */,
 				C5FDB2271B9683B2001F2B94 /* Report.swift in Sources */,
 				C52D3F9B1B96625200535111 /* User.swift in Sources */,
 				C5FDB21D1B967F1B001F2B94 /* Post.swift in Sources */,

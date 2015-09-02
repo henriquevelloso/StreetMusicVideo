@@ -11,7 +11,7 @@ import Parse
 
 class Post: PFObject, PFSubclassing {
     
-    //MARK: - Properties
+ //MARK: - Properties
     
     /*
     objectId : String
@@ -21,6 +21,12 @@ class Post: PFObject, PFSubclassing {
     
     @NSManaged var user: User?
     @NSManaged var video: Video?
+    @NSManaged var location: PFGeoPoint?
+    @NSManaged var descriptionText: String?
+    @NSManaged var likes: PFRelation?
+    @NSManaged var comments:  PFRelation?
+
+    
     
     
     //MARK: - Events
@@ -31,13 +37,24 @@ class Post: PFObject, PFSubclassing {
         dispatch_once(&Static.onceToken) {
             self.registerSubclass()
         }
+        
     }
+    
+    
+    override init() {
+        super.init()
+        
+        self.comments = self.relationForKey("comments")
+        self.likes = self.relationForKey("likes")
+        
+    }    
     
     static func parseClassName() -> String {
         return "Post"
     }
     
     //MARK: - Functions
+    
     
     
     
