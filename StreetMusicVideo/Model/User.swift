@@ -13,8 +13,22 @@ class User: PFUser {
 
     //MARK: - Properties
     
+    /*
+    objectId : String
+    username : String
+    password : String
+    emailVerified : Bool
+    email : String
+    createdAt : NSData
+    updatedAt : NSData
+    */
+    
     @NSManaged var name: String?
-    @NSManaged var lastName: String?
+    @NSManaged var photo: PFFile?
+    
+
+    
+    @NSManaged var fullName: String?
     
     //MARK: - Events
     override class func initialize() {
@@ -24,6 +38,7 @@ class User: PFUser {
         
         dispatch_once(&Static.onceToken) {
             self.registerSubclass()
+        
         }
     }
     
@@ -35,6 +50,9 @@ class User: PFUser {
                 callback(success: true, error: nil)
             } else {
                 callback(success: false, error: error)
+                
+                
+                
             }
         })
     }
